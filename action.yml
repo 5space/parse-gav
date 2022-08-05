@@ -1,0 +1,16 @@
+name: "GAV parser"
+description: "Parse the groupId, artifactId, and version from pom.xml"
+inputs:
+  file:
+    required: false
+    default: "pom.xml"
+output:
+  group_id:
+    description: "The groupId, or parent.groupId"
+  artifact_id:
+    description: "The artifactId"
+  version:
+    description: "The version"
+runs:
+  using: "node16"
+  main: "index.js"
