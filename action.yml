@@ -5,9 +5,9 @@ inputs:
     required: false
     default: "pom.xml"
 output:
-  group_id:
+  groupId:
     description: "The groupId, or parent.groupId"
-  artifact_id:
+  artifactId:
     description: "The artifactId"
   version:
     description: "The version"
